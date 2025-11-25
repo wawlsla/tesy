@@ -842,7 +842,7 @@ main_download() {
         echo "100" >"$PROGRESS_DIR/$file"
         ;;
     yabs)
-        local url="https://gh-proxy.org/https://raw.githubusercontent.com/masonr/yet-another-bench-script/master/yabs.sh"
+        local url="http://cdn2.spiritlhl.net/https://raw.githubusercontent.com/masonr/yet-another-bench-script/master/yabs.sh"
         local output="$TEMP_DIR/yabs.sh"
         download_file "$url" "$output" "$PROGRESS_DIR/$file"
         chmod +x "$output"
